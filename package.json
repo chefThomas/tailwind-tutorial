@@ -1,0 +1,15 @@
+{
+  "name": "tailwind_tut2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+"tw": "tailwindcss build styles.css -o output.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^1.9.6"
+  }
+}
