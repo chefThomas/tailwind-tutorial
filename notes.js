@@ -1,4 +1,5 @@
 /**
+ * GENERAL TAILWIND NOTES
  * handy dandy tailwind classes and their doc links
  *
  * 1
@@ -19,9 +20,10 @@
  * BOX SHADOW https://tailwindcss.com/docs/box-shadow
  *
  * PURGE CSS
- * Tailwind produces a lot of unused CSS which should be removed to enhance performance. Purge reduces filesize by many orders of
- * magnitude. Ex 2mb to 10kb.
+ * Tailwind produces a lot of unused CSS which should be removed to enhance performance. Purge reduces filesize by many times. Ex 2mb to 10kb.
  *
- * For more useful resources associated with Tailwind, see https://github.com/aniftyco/awesome-tailwindcss
+ * For many resources associated with Tailwind, see https://github.com/aniftyco/awesome-tailwindcss
  * Includes, many free templates, components and LEARNING resources
+ *
+ *
  */
