@@ -10,10 +10,12 @@ module.exports = {
       body: ["Graphik", "sans-serif"],
     },
     container: {
-      center: true,
       padding: {
-        default: "1rem",
+        default: "3rem",
       },
+    },
+    inset: {
+      "1/2": "50%",
     },
     extend: {},
   },
