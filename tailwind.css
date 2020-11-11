@@ -1,0 +1,13 @@
+@tailwind base;
+
+@tailwind components;
+
+.project-card {
+  @apply rounded text-blue-200 pb-2 z-0 border border-solid border border-blue-200;
+}
+
+.section-header {
+  @apply text-2xl mb-10;
+}
+
+@tailwind utilities;

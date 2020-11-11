@@ -9,7 +9,7 @@
     <script src="scripts/scroll.js"></script>
   </head>
   <body class="font-sans leading-height bg-gray-900 text-blue-300">
-    <header class='w-full fixed h-24 bg-gray-900'>
+    <header class='w-full fixed h-24 bg-gray-900 z-50'>
         <div class="flex justify-start items-center p-5 h-full">
                   <!--icon container-->  
                   <div id="icon-container" class="relative w-16 h-16 ">
@@ -30,11 +30,10 @@
         </div>
     </header>
     <!--intro-->
-    <section id="home" class="h-screen pt-40">
-      <div class="container sm:min-w-3/4 lg:w-1/2">
+    <section id="home" class="min-h-screen px-10 pt-32 container section">
+      <!-- <div class="sm:min-w-3/4 lg:w-1/2"> -->
         <div class="leading-tight">
-          <p class="text-2xl sm:text-3xl">Tom Dixon</p>
-          <p class="text-blue-200 pl-1">Software Developer</p>
+          <h1 class="text-xl sm:text-2xl">Tom Dixon<p class="text-base text-blue-200 pl-1">Software Developer</p></h1>          
         </div>
         <hr class="my-4 w-32" />
         <p class="text-blue-100 w-3/4 mb-10">
@@ -46,26 +45,36 @@
         >
           <div class="z-0">Explore</div>
         </button>
-      </div>
+      <!-- </div> -->
     </section>
     <!--projects-->
-    <div class="container">
-
-    </div>
-    <section id="projects" class="h-screen pt-40">
-      <div class="container"><header>Projects</header></div>
+    <section id="projects" class="pr-10 pl-10 pt-24 md:pt-40 container min-h-screen">
+        <header><h2 class="section-header">Projects</h2></header>
+        <!--projects container-->
+        <div class="container grid md:grid-cols-2 gap-4">
+          <div class="project-card hover-card hover:shadow-lg sm:w-full">
+            <img src="chasing-english 1.svg" alt="chasing english site" class="w-full mb-4">
+            <div class="card-content px-2">
+              <h3 class="text-base font-semibold">Chasing English</h3>
+              <p>fullstack e-commerce and CMS</p>
+            </div>
+          </div>  
+          <div class="project-card hover-card hover:shadow-lg sm:w-full">
+            <img src="pluma 1.svg" alt="chasing english site" class="w-full mb-4">
+            <div class="card-content px-2">      
+              <h3 class="text-base font-semibold">Pluma</h3>
+              <p>geodata mapper</p>
+            </div>
+          </div>     
+        </div>
     </section>
         <!--resume-->
-        <section id="resume" class="h-screen pt-40">
-          <div class="container">
-            <header>Resume</header>
-          </div>
+        <section id="resume" class="pr-10 pl-10 pt-24 md:pt-40 container min-h-screen">
+            <header><h2 class="section-header">Resume</h2></header>
         </section>
     <!--contact-->
-    <section id="contact" class="h-screen pt-40">
-      <div class="container">
-        <header>Contact</header>
-      </div>
+    <section id="contact" class="pr-10 pl-10 pt-24 md:pt-40 container min-h-screen">
+        <header><h2 class="section-header">Contact</h2></header>
     </section>
   </body>
 </html>

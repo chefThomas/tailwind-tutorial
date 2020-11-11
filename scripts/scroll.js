@@ -1,5 +1,5 @@
 function scrollToSection(section) {
-  const options = { behavior: "smooth", block: "start" };
+  const options = { behavior: "smooth", alignToTop: true };
   switch (section) {
     case "home":
       document.getElementById("home").scrollIntoView(options);

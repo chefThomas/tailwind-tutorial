@@ -18,7 +18,7 @@
   transform-origin: center; */
   /* -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg); */
-  transform: translate(-50%, -50%) rotate(90deg) scale(0.75);
+  transform: translate(-50%, -50%) rotate(120deg) scale(0.75);
 }
 
 @keyframes fillFadeOut {
@@ -37,4 +37,20 @@
   to {
     fill: #90cdf4;
   }
+}
+
+/* #projects,
+#resume,
+#contact {
+  padding-top: 10rem;
+} */
+
+.hover-card {
+  transition: all 0.2s ease-in;
+  /* transition:transform 0.2s ease-in ; */
+}
+
+.hover-card:hover {
+  cursor: pointer;
+  transform: translateY(-1px);
 }
