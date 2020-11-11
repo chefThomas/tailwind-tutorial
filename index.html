@@ -30,7 +30,7 @@
         </div>
     </header>
     <!--intro-->
-    <section id="home" class="min-h-screen px-10 pt-32 container section">
+    <section id="home" class="min-h-screen px-10 pt-32">
       <!-- <div class="sm:min-w-3/4 lg:w-1/2"> -->
         <div class="leading-tight">
           <h1 class="text-xl sm:text-2xl">Tom Dixon<p class="text-base text-blue-200 pl-1">Software Developer</p></h1>          
@@ -48,33 +48,83 @@
       <!-- </div> -->
     </section>
     <!--projects-->
-    <section id="projects" class="pr-10 pl-10 pt-24 md:pt-40 container min-h-screen">
+    <section id="projects" class="pr-10 pl-10 pt-24 md:pt-40 min-h-screen">
         <header><h2 class="section-header">Projects</h2></header>
         <!--projects container-->
-        <div class="container grid md:grid-cols-2 gap-4">
-          <div class="project-card hover-card hover:shadow-lg sm:w-full">
-            <img src="chasing-english 1.svg" alt="chasing english site" class="w-full mb-4">
+        <div class=" mx-auto gap-4 projects-grid">
+          <div class="project-card hover-card hover:shadow-lg  w-full">
+            <img src="images/chasing-english 1.svg" alt="chasing english site" class="w-full mb-4">
             <div class="card-content px-2">
               <h3 class="text-base font-semibold">Chasing English</h3>
               <p>fullstack e-commerce and CMS</p>
             </div>
           </div>  
-          <div class="project-card hover-card hover:shadow-lg sm:w-full">
-            <img src="pluma 1.svg" alt="chasing english site" class="w-full mb-4">
+          <div class="project-card hover-card hover:shadow-lg  w-full">
+            <img src="images/pluma 1.svg" alt="chasing english site" class="w-full mb-4">
             <div class="card-content px-2">      
               <h3 class="text-base font-semibold">Pluma</h3>
               <p>geodata mapper</p>
             </div>
-          </div>     
+          </div>  
+          <div class="project-card hover-card hover:shadow-lg  w-full">
+            <img src="images/chasing-english 1.svg" alt="chasing english site" class="w-full mb-4">
+            <div class="card-content px-2">
+              <h3 class="text-base font-semibold">Chasing English</h3>
+              <p>fullstack e-commerce and CMS</p>
+            </div>
+          </div>  
+          <div class="project-card hover-card hover:shadow-lg w-full">
+            <img src="images/pluma 1.svg" alt="chasing english site" class="w-full mb-4 object-cover">
+            <div class="card-content px-2">      
+              <h3 class="text-base font-semibold">Pluma</h3>
+              <p>geodata mapper</p>
+            </div>
+          </div>    
         </div>
     </section>
         <!--resume-->
-        <section id="resume" class="pr-10 pl-10 pt-24 md:pt-40 container min-h-screen">
+        <section id="resume" class="px-10 pt-24 md:pt-40  min-h-screen">
             <header><h2 class="section-header">Resume</h2></header>
         </section>
     <!--contact-->
-    <section id="contact" class="pr-10 pl-10 pt-24 md:pt-40 container min-h-screen">
+    <section id="contact" class="px-10 pt-24 md:pt-40 min-h-screen">
         <header><h2 class="section-header">Contact</h2></header>
+       <div class="sm:w-full input-container p-3">
+      <form id="contact" action="submit">
+        <div class="mb-4">
+          <label class="blocktext-sm  mb-2" for="username">
+            Name*
+          </label>
+          <input  required class="text-input  appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline focus:shadow-outline" id="name" type="text">
+        </div>
+        <div class="mb-4">
+          <label class="blocktext-sm  mb-2" for="email">
+            Email*
+          </label>
+          <input required class=" text-input appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline focus:shadow-outline" id="email" type="text">
+        </div>
+        <div class="mb-4">
+          <label class="blocktext-sm  mb-2" for="company">
+            Company
+          </label>
+          <input class=" text-input appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline focus:shadow-outline" id="company" type="text">
+        </div>
+      </form>
+          <div class="mb-4">
+            <label class="blocktext-sm  mb-2" for="company">
+              Message*
+            </label>
+            <textarea required rows="10" cols="50" class="text-input appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline focus:shadow-outline" id="message" form="contact" type="text" ></textarea>
+          </div>    
+          <div class="flex justify-center">
+            <button
+            onClick=""
+            class="rounded w-1/2  mx-auto py-1 border-solid border-2 text-xs border-blue-200 hover:text-white hover:bg-blue-800""
+          >
+            <div class="z-0">Submit</div>
+          </button>
+          </div> 
+      </div>
     </section>
   </body>
 </html>

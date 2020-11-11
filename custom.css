@@ -39,12 +39,9 @@
   }
 }
 
-/* #projects,
-#resume,
-#contact {
-  padding-top: 10rem;
+/* .grid-form {
+  grid-template-columns: minmax(5rem, 10rem);
 } */
-
 .hover-card {
   transition: all 0.2s ease-in;
   /* transition:transform 0.2s ease-in ; */
@@ -53,4 +50,24 @@
 .hover-card:hover {
   cursor: pointer;
   transform: translateY(-1px);
+}
+
+.project-card {
+  max-width: 25rem;
+  min-width: 20rem;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.text-input {
+  background-color: #1a202c;
+  min-width: 10rem;
+}
+
+.input-container {
+  max-width: 25rem;
 }

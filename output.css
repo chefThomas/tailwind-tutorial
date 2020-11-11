@@ -621,7 +621,6 @@ video {
   color: rgba(190, 227, 248, var(--text-opacity));
   padding-bottom: 0.5rem;
   z-index: 0;
-  border-width: 1px;
   border-style: solid;
   border-width: 1px;
   --border-opacity: 1;
