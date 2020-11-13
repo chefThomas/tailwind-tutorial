@@ -1,130 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="output.css" />
-    <link rel="stylesheet" href="custom.css" />
-    <script src="scripts/scroll.js"></script>
-  </head>
-  <body class="font-sans leading-height bg-gray-900 text-blue-300">
-    <header class='w-full fixed h-24 bg-gray-900 z-50'>
-        <div class="flex justify-start items-center p-5 h-full">
-                  <!--icon container-->  
-                  <div id="icon-container" class="relative w-16 h-16 ">
-                    <svg  id="icon-hex" class="absolute absolute-item-center animate-pulse" width="35" height="35" viewBox="0 0 66 76" fill="none" xmlns="http://www.w3.org/2000/svg" >
-                      <path d="M34.58 3.22161L62.329 19.2425C63.5213 19.9309 63.6304 20.0324 63.6927 20.1109C63.7535 20.1876 63.8027 20.2729 63.8387 20.3639C63.8756 20.4571 63.909 20.6024 63.909 21.9791V54.0209C63.909 55.3976 63.8756 55.5429 63.8387 55.6361C63.8027 55.7271 63.7535 55.8124 63.6927 55.8891C63.6304 55.9676 63.5213 56.0691 62.329 56.7575L34.58 72.7784C33.3877 73.4668 33.2452 73.5105 33.1461 73.5252C33.0492 73.5395 32.9508 73.5395 32.8539 73.5252C32.7548 73.5105 32.6123 73.4668 31.42 72.7784L3.67103 56.7575C2.47874 56.0691 2.36958 55.9676 2.30734 55.8891C2.24652 55.8124 2.1973 55.7271 2.16126 55.6361C2.12437 55.5429 2.09103 55.3976 2.09103 54.0209V21.9791C2.09103 20.6024 2.12437 20.4571 2.16126 20.3639C2.1973 20.2729 2.24652 20.1876 2.30734 20.1109C2.36958 20.0324 2.47874 19.9309 3.67103 19.2425L31.42 3.22161C32.6123 2.53324 32.7548 2.48947 32.8539 2.47483C32.9508 2.46053 33.0492 2.46053 33.1461 2.47483C33.2452 2.48947 33.3877 2.53324 34.58 3.22161Z" stroke="white" stroke-width="5" class="YFVveOWn_0"></path>
-                      <style data-made-with="vivus-instant">.YFVveOWn_0{stroke-dasharray:214 216;stroke-dashoffset:215;animation:YFVveOWn_draw 900ms ease-in-out 0ms forwards;}@keyframes YFVveOWn_draw{100%{stroke-dashoffset:0;}}@keyframes YFVveOWn_fade{0%{stroke-opacity:1;}92.15686274509804%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
-                  </div>
-          <nav>
-            <ul class="flex">
-              <li class="mr-4"><button onClick="scrollToSection('home')">home</button></li>
-              <li class="mr-4"><button onClick="scrollToSection('projects')">projects</button></li>
-              <li class="mr-4">
-                <button onClick="scrollToSection('resume')">resume</button>
-              </li>
-              <li class="mr-4"><button onClick="scrollToSection('contact')">contact</button></li>
-            </ul>
-          </nav>
-        </div>
-    </header>
-    <!--intro-->
-    <section id="home" class="min-h-screen px-10 pt-32">
-      <!-- <div class="sm:min-w-3/4 lg:w-1/2"> -->
-        <div class="leading-tight">
-          <h1 class="text-xl sm:text-2xl">Tom Dixon<p class="text-base text-blue-200 pl-1">Software Developer</p></h1>          
-        </div>
-        <hr class="my-4 w-32" />
-        <p class="text-blue-100 w-3/4 mb-10">
-          Seattle-based UI engineer, specializing in React and AWS deployment.
-        </p>
-        <button
-          onClick="scrollToSection('projects')"
-          class="rounded w-20 py-1 border-solid border-2 text-xs border-blue-200 shadow hover:text-white hover:bg-blue-800""
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tom Dixon</title>
+  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="custom.css" />
+  <script src="scripts/scroll.js"></script>
+</head>
+
+<body class="font-sans leading-height bg-gray-900 text-blue-300">
+  <header class='w-full fixed h-24 bg-gray-900 z-50'>
+    <div class="flex justify-start items-center p-5 h-full">
+      <!--icon container-->
+      <div id="icon-container" class="relative w-16 h-16 ">
+        <svg id="icon-hex" class="absolute absolute-item-center animate-pulse" width="35" height="35"
+          viewBox="0 0 66 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M34.58 3.22161L62.329 19.2425C63.5213 19.9309 63.6304 20.0324 63.6927 20.1109C63.7535 20.1876 63.8027 20.2729 63.8387 20.3639C63.8756 20.4571 63.909 20.6024 63.909 21.9791V54.0209C63.909 55.3976 63.8756 55.5429 63.8387 55.6361C63.8027 55.7271 63.7535 55.8124 63.6927 55.8891C63.6304 55.9676 63.5213 56.0691 62.329 56.7575L34.58 72.7784C33.3877 73.4668 33.2452 73.5105 33.1461 73.5252C33.0492 73.5395 32.9508 73.5395 32.8539 73.5252C32.7548 73.5105 32.6123 73.4668 31.42 72.7784L3.67103 56.7575C2.47874 56.0691 2.36958 55.9676 2.30734 55.8891C2.24652 55.8124 2.1973 55.7271 2.16126 55.6361C2.12437 55.5429 2.09103 55.3976 2.09103 54.0209V21.9791C2.09103 20.6024 2.12437 20.4571 2.16126 20.3639C2.1973 20.2729 2.24652 20.1876 2.30734 20.1109C2.36958 20.0324 2.47874 19.9309 3.67103 19.2425L31.42 3.22161C32.6123 2.53324 32.7548 2.48947 32.8539 2.47483C32.9508 2.46053 33.0492 2.46053 33.1461 2.47483C33.2452 2.48947 33.3877 2.53324 34.58 3.22161Z"
+            stroke="white" stroke-width="5" class="YFVveOWn_0"></path>
+          <style data-made-with="vivus-instant">
+            .YFVveOWn_0 {
+              stroke-dasharray: 214 216;
+              stroke-dashoffset: 215;
+              animation: YFVveOWn_draw 900ms ease-in-out 0ms forwards;
+            }
+
+            @keyframes YFVveOWn_draw {
+              100% {
+                stroke-dashoffset: 0;
+              }
+            }
+
+            @keyframes YFVveOWn_fade {
+              0% {
+                stroke-opacity: 1;
+              }
+
+              92.15686274509804% {
+                stroke-opacity: 1;
+              }
+
+              100% {
+                stroke-opacity: 0;
+              }
+            }
+          </style>
+        </svg>
+      </div>
+      <nav>
+        <ul class="flex">
+          <li class="mr-4"><button onClick="scrollToSection('home')">home</button></li>
+          <li class="mr-4"><button onClick="scrollToSection('projects')">projects</button></li>
+          <li class="mr-4">
+            <button onClick="scrollToSection('resume')">résumé</button>
+          </li>
+          <li class="mr-4"><button onClick="scrollToSection('contact')">contact</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--intro-->
+  <section id="home" class="min-h-screen px-10 pt-32">
+    <!-- <div class="sm:min-w-3/4 lg:w-1/2"> -->
+    <div class="leading-tight">
+      <h1 class="text-xl sm:text-2xl">Tom Dixon<p class="text-base text-blue-200 pl-1">Software Developer</p>
+      </h1>
+    </div>
+    <hr class="my-4 w-32" />
+    <p class="text-blue-100 w-3/4 mb-10">
+      Seattle-based UI engineer, specializing in React and AWS deployment.
+    </p>
+    <button onClick="scrollToSection('projects')"
+      class="rounded w-20 py-1 border-solid border-2 text-xs border-blue-200 shadow hover:text-white hover:bg-blue-800""
         >
-          <div class="z-0">Explore</div>
-        </button>
-      <!-- </div> -->
-    </section>
-    <!--projects-->
-    <section id="projects" class="pr-10 pl-10 pt-24 md:pt-40 min-h-screen">
-        <header><h2 class="section-header">Projects</h2></header>
-        <!--projects container-->
-        <div class=" mx-auto gap-4 projects-grid">
-          <div class="project-card hover-card hover:shadow-lg  w-full">
-            <img src="images/chasing-english 1.svg" alt="chasing english site" class="w-full mb-4">
-            <div class="card-content px-2">
-              <h3 class="text-base font-semibold">Chasing English</h3>
-              <p>fullstack e-commerce and CMS</p>
-            </div>
-          </div>  
-          <div class="project-card hover-card hover:shadow-lg  w-full">
-            <img src="images/pluma 1.svg" alt="chasing english site" class="w-full mb-4">
-            <div class="card-content px-2">      
-              <h3 class="text-base font-semibold">Pluma</h3>
-              <p>geodata mapper</p>
-            </div>
-          </div>  
-          <div class="project-card hover-card hover:shadow-lg  w-full">
-            <img src="images/chasing-english 1.svg" alt="chasing english site" class="w-full mb-4">
-            <div class="card-content px-2">
-              <h3 class="text-base font-semibold">Chasing English</h3>
-              <p>fullstack e-commerce and CMS</p>
-            </div>
-          </div>  
-          <div class="project-card hover-card hover:shadow-lg w-full">
-            <img src="images/pluma 1.svg" alt="chasing english site" class="w-full mb-4 object-cover">
-            <div class="card-content px-2">      
-              <h3 class="text-base font-semibold">Pluma</h3>
-              <p>geodata mapper</p>
-            </div>
-          </div>    
+          <div class=" z-0">Explore</div>
+    </button>
+    <!-- </div> -->
+  </section>
+  <!--projects-->
+  <section id="projects" class="pr-10 pl-10 pt-24 md:pt-40 min-h-screen">
+    <header>
+      <h2 class="section-header">Projects</h2>
+    </header>
+    <!--projects container-->
+    <div class=" mx-auto gap-4 projects-grid">
+      <div class="project-card hover-card hover:shadow-lg  w-full">
+        <img src="images/chasing-english 1.svg" alt="chasing english site" class="w-full mb-4">
+        <div class="card-content px-2">
+          <h3 class="text-base font-semibold">Chasing English</h3>
+          <p>fullstack e-commerce and CMS</p>
         </div>
-    </section>
-        <!--resume-->
-        <section id="resume" class="px-10 pt-24 md:pt-40  min-h-screen">
-            <header><h2 class="section-header">Resume</h2></header>
-        </section>
-    <!--contact-->
-    <section id="contact" class="px-10 pt-24 md:pt-40 min-h-screen">
-        <header><h2 class="section-header">Contact</h2></header>
-       <div class="sm:w-full input-container p-3">
+      </div>
+      <div class="project-card hover-card hover:shadow-lg  w-full">
+        <img src="images/pluma 1.svg" alt="chasing english site" class="w-full mb-4">
+        <div class="card-content px-2">
+          <h3 class="text-base font-semibold">Pluma</h3>
+          <p>geodata mapper</p>
+        </div>
+      </div>
+      <div class="project-card hover-card hover:shadow-lg  w-full">
+        <img src="images/chasing-english 1.svg" alt="chasing english site" class="w-full mb-4">
+        <div class="card-content px-2">
+          <h3 class="text-base font-semibold">Chasing English</h3>
+          <p>fullstack e-commerce and CMS</p>
+        </div>
+      </div>
+      <div class="project-card hover-card hover:shadow-lg w-full">
+        <img src="images/pluma 1.svg" alt="chasing english site" class="w-full mb-4 object-cover">
+        <div class="card-content px-2">
+          <h3 class="text-base font-semibold">Pluma</h3>
+          <p>geodata mapper</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--resume-->
+  <section id="resume" class="px-10 pt-24 md:pt-40  min-h-screen ">
+    <h2 class="section-header">Résumé
+    </h2>
+    <div class="border border-solid border-blue-200 p-8 bg-blue-200 text-gray-900">
+      <article>
+        <div class="flex justify-between align-center mb-8">
+          <div class="my-auto">
+            <h3 class='text-xl'>Tom Dixon</h3>
+            <p>Software Developer</p>
+            <p>Seattle, WA</p>
+          </div>
+          <div>
+            <div><button><img class="inline-block mr-2" src="images/icon-email.svg"
+                  alt="icon-email"><span>noxidwebdev@gmail.com</span> </button></div>
+            <div> <button><img class="inline-block" src="images/icon_mobile-phone-filled.svg"
+                  alt="icon_mobile-phone-filled"> 208.805.0518</button></div>
+  
+            <button><a href="https://noxidwebdev.com" target="_blank"><img class="inline-block mr-2"
+                  src="images/icon_laptop-outlined.svg" alt="icon_laptop-outlined"></a>noxidwebdev.com</button><br>
+            <button><a href="https://github.com/chefThomas" target="_blank"><img class="inline-block mr-1"
+                  src="images/icon-github-filled.svg" alt="icon-github-filled"></a></button> <button><a
+                href="https://linkedin.com/in/webtom" target="_blank"><img class="inline-block"
+                  src="images/icon-linkedin-filled.svg" alt="icon-linkedin-filled"></a> </button>
+          </div>
+        </div>
+        <!--Summary section-->
+        <div class="mb-8">
+          <h3 class="text-lg mb-2">Summary</h3>
+          <p class="font-light px-2">Web Developer delivering responsive UIs with a clean, simple, and engaging style.
+            Experience building full-stack e-commerce applications from initial concept to design and final deployment.
+            Multi-disciplinarian with thoughtful and collaborative mentality. Experience with serverless technologies,
+            including AWS. Former biologist and teacher, adaptable, and skilled in communication and conflict resolution.
+          </p>
+        </div>
+        <!--Skills and tech section-->
+        <div class="mb-8">
+          <h3 class="text-lg mb-2">Skills and Technology</h3>
+          <div>
+            <div class="flex px-2">
+              <div class="mr-4">
+                <h4 class="mb-1">Skills</h4>
+                <ul class="px-5 list-disc">
+                  <li class="font-light">UI Development</li>
+                  <li class="font-light">Fullstack Web Development</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="mb-1">Technology</h4>
+                <ul class="px-5 list-disc">
+                  <li class="font-light">React</li>
+                  <li class="font-light"></li>
+                  <li class="font-light">Tailwind CSS</li>
+                </ul>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </article>
+    </div>
+
+  </section>
+  <!--contact-->
+  <section id="contact" class="px-10 pt-24 md:pt-40 min-h-screen">
+    <header>
+      <h2 class="section-header">Contact</h2>
+    </header>
+    <div class="sm:w-full input-container p-3">
       <form id="contact" action="submit">
         <div class="mb-4">
           <label class="blocktext-sm  mb-2" for="username">
             Name*
           </label>
-          <input  required class="text-input  appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline focus:shadow-outline" id="name" type="text">
+          <input required
+            class="text-input  appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline focus:shadow-outline"
+            id="name" type="text">
         </div>
         <div class="mb-4">
           <label class="blocktext-sm  mb-2" for="email">
             Email*
           </label>
-          <input required class=" text-input appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline focus:shadow-outline" id="email" type="text">
+          <input required
+            class=" text-input appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline focus:shadow-outline"
+            id="email" type="text">
         </div>
         <div class="mb-4">
           <label class="blocktext-sm  mb-2" for="company">
             Company
           </label>
-          <input class=" text-input appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline focus:shadow-outline" id="company" type="text">
+          <input
+            class=" text-input appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline focus:shadow-outline"
+            id="company" type="text">
         </div>
       </form>
-          <div class="mb-4">
-            <label class="blocktext-sm  mb-2" for="company">
-              Message*
-            </label>
-            <textarea required rows="10" cols="50" class="text-input appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline focus:shadow-outline" id="message" form="contact" type="text" ></textarea>
-          </div>    
-          <div class="flex justify-center">
-            <button
-            onClick=""
-            class="rounded w-1/2  mx-auto py-1 border-solid border-2 text-xs border-blue-200 hover:text-white hover:bg-blue-800""
-          >
-            <div class="z-0">Submit</div>
-          </button>
-          </div> 
+      <div class="mb-4">
+        <label class="blocktext-sm  mb-2" for="company">
+          Message*
+        </label>
+        <textarea required rows="10" cols="50"
+          class="text-input appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline focus:shadow-outline"
+          id="message" form="contact" type="text"></textarea>
       </div>
-    </section>
-  </body>
+      <div class="flex justify-center">
+        <button onClick=""
+          class="rounded w-1/2  mx-auto py-1 border-solid border-2 text-xs border-blue-200 hover:text-white hover:bg-blue-800""
+          >
+            <div class=" z-0">Submit</div>
+      </button>
+    </div>
+    </div>
+  </section>
+</body>
+
 </html>
