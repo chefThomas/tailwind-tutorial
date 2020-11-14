@@ -1,77 +1,84 @@
 #icon-hex {
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  transition: transform 0.5s ease-in;
-  /* fill: #90cdf4; */
-  animation: fillFadeIn 1s ease-out 0s 1 normal forwards;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	transition: transform 0.5s ease-in;
+	animation: fillFadeIn 1s ease-out 0s 1 normal forwards;
+	animation-delay: 1s;
 }
 
 #icon-hex:hover {
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  animation: fillFadeOut 0.8s ease-in-out forwards;
-  /* -webkit-transform-origin: center;
+	top: 50%;
+	left: 50%;
+	animation: fillFadeOut 1s ease-in-out forwards;
+	/* -webkit-transform-origin: center;
   -moz-transform-origin: center;
   -o-transform-origin: center;
   transform-origin: center; */
-  /* -webkit-transform: rotate(45deg);
+	/* -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg); */
-  transform: translate(-50%, -50%) rotate(120deg) scale(0.75);
+	transform: translate(-50%, -50%) rotate(120deg) scale(0.8);
 }
 
 #resume {
-  max-width: 850px;
+	max-width: 850px;
 }
 
 @keyframes fillFadeOut {
-  from {
-    fill: #90cdf4;
-  }
-  to {
-    fill: transparent;
-  }
+	from {
+		fill: #90cdf4;
+	}
+	to {
+		fill: transparent;
+	}
 }
 
 @keyframes fillFadeIn {
-  from {
-    fill: transparent;
-  }
-  to {
-    fill: #90cdf4;
-  }
+	from {
+		fill: transparent;
+	}
+	to {
+		fill: #90cdf4;
+	}
 }
 
 /* .grid-form {
   grid-template-columns: minmax(5rem, 10rem);
 } */
+
+.hr-dark {
+	color: #1a202c;
+}
 .hover-card {
-  transition: all 0.2s ease-in;
-  /* transition:transform 0.2s ease-in ; */
+	transition: all 0.2s ease-in;
+	/* transition:transform 0.2s ease-in ; */
 }
 
 .hover-card:hover {
-  cursor: pointer;
-  transform: translateY(-1px);
+	cursor: pointer;
+	transform: translateY(-1px);
 }
 
-.project-card {
-  max-width: 25rem;
-  min-width: 20rem;
-}
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-  gap: 1rem;
-  justify-items: center;
-}
-
-.text-input {
-  background-color: #1a202c;
-  min-width: 10rem;
+.icon-small {
+	width: 1rem;
+	padding-bottom: 2px;
 }
 
 .input-container {
-  max-width: 25rem;
+	max-width: 25rem;
+}
+.project-card {
+	max-width: 25rem;
+	min-width: 20rem;
+}
+.projects-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+	gap: 1rem;
+	justify-items: center;
+}
+
+.text-input {
+	background-color: #1a202c;
+	min-width: 10rem;
 }
